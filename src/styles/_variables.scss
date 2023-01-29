@@ -1,0 +1,23 @@
+// css variables/theming
+:root {
+    body.theme-dark {
+      --primary-bg-color: #273244;
+      --secondary-bg-color: #1f2a3c;
+      --search-bg-color: #1a2536;
+      --accent-primary: #00e0ff;
+      --text-primary: #d4d7dd;
+      --text-secondary: #ffffff;
+      --bg-3: #394b61;
+      --button-bg-color: #000000;
+    }
+    body.theme-light {
+      --primary-bg-color: #d4d7dd;
+      --secondary-bg-color: #ffffff;
+      --search-bg-color: #fff;
+      --accent-primary: #00e0ff;
+      --text-primary: #1a2536;
+      --text-secondary: #000;
+      --bg-3: #fff;
+      --button-bg-color: #000000;
+    }
+  }

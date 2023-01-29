@@ -1,0 +1,38 @@
+
+.app-sidebar{
+    .menu-list-item {
+        &__text{
+            color: var(--text-primary);
+        }
+        &:hover:not([disabled]), & .active-link{
+            .menu-list-item__text{
+                color: var(--accent-primary) !important;
+            }
+           svg{
+            fill: var(--accent-primary);
+           }
+        }
+        &__icon{
+            margin-left: 20%;
+            min-width: fit-content;
+            margin-right: 10px;
+            svg{
+                fill: var(--text-primary);
+               }
+        }
+    }
+
+    .active-link::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        background-color: var(--accent-primary);
+        top: 0;
+        right: 0;
+    }
+
+    .profie-name{
+        color: var(--text-primary);   
+    }
+}

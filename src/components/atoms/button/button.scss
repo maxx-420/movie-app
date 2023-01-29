@@ -1,0 +1,21 @@
+.app-button{
+    &.MuiButton-root{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+       &.text{
+        background-color: transparent;
+        color: var(--accent-primary);
+       }
+       &.outlined{
+        background-color: transparent;
+        color: var(--accent-primary);
+        border-color: var(--accent-primary);
+       }
+       &.contained{
+        background-color: var(--accent-primary);
+        color: var(--button-bg-color);
+       }
+    }
+}

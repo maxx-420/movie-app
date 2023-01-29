@@ -1,0 +1,59 @@
+.detail-card {
+  display: flex;
+  background-color: var(--bg-3);
+  flex-direction: row;
+  height: 390px;
+    color: var(--text-primary);
+
+  &__poster {
+    flex: 0 0 30%;
+    object-fit: cover;
+  }
+  &__info {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 70%;
+    align-items: flex-start;
+    gap: 10px;
+    overflow-y: auto;
+  }
+
+  &__rating-bar {
+    &.MuiLinearProgress-root {
+      background-color: var(--primary-bg-color);
+    }
+    span {
+      background-color: var(--accent-primary);
+    }
+  }
+
+  &__rating-text {
+    color: var(--text-secondary);
+  }
+
+  &__desc {
+    text-align: justify;
+  }
+
+  .info-lines {
+    display: flex;
+    width: 100%;
+    padding: 6px 0;
+    p:first-child {
+      flex-basis: 50%;
+      text-align: start;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    &__info {
+      overflow: hidden;
+    }
+    .info-lines {
+      p:first-child {
+        flex-basis: 20%;
+      }
+    }
+  }
+}

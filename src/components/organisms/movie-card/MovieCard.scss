@@ -1,0 +1,23 @@
+.movie-card {
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  &__action-button {
+    padding: 0;
+    font-size: 24px;
+  }
+  &__title {
+    text-align: left;
+    padding-top: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--text-primary);
+  }
+  &__poster {
+    border-radius: 10px;
+  }
+  &.MuiPaper-root{
+    background-color: var(--bg-3);
+  }
+}
