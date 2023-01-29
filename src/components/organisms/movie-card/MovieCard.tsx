@@ -3,8 +3,6 @@ import {
   CardActionArea,
   CardMedia,
   CardContent,
-  Typography,
-  Button,
   CardActions,
   IconButton,
 } from "@mui/material";
@@ -12,8 +10,9 @@ import {
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import './MovieCard.scss';
+import { memo } from "react";
 
-export default function MovieCard({Poster, Title}: any) {
+function MovieCard({Poster, Title}: any) {
   return (
     <Card
     className="movie-card"
@@ -77,3 +76,5 @@ export default function MovieCard({Poster, Title}: any) {
     </Card>
   );
 }
+
+export default memo(MovieCard);

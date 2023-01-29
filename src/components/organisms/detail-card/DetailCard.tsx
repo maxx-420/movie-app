@@ -3,8 +3,9 @@ import "./DetailCard.scss";
 
 import StyledButton from "../../atoms/button/Button";
 import { Stack } from "@mui/system";
+import { memo } from "react";
 
-export function DetailCard({
+function DetailCard({
   Poster,
   Title,
   Year,
@@ -81,3 +82,5 @@ export function DetailCard({
     </div>
   );
 }
+
+export default memo(DetailCard)

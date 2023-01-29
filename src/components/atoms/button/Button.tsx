@@ -1,4 +1,5 @@
 import { Button, SxProps } from "@mui/material";
+import { memo } from "react";
 import './button.scss';
 
 export interface ButtonProps{
@@ -7,9 +8,11 @@ export interface ButtonProps{
     style?: SxProps;
     hollow?: boolean
 }
-export default function StyledButton({variant = 'contained', children, style}: ButtonProps){
+function StyledButton({variant = 'contained', children, style}: ButtonProps){
 
     return (
       <Button color="primary" disableFocusRipple disableRipple className={`app-button ${variant}`} variant={variant} sx={style}>{children}</Button>
     )
 }
+
+export default memo(StyledButton)

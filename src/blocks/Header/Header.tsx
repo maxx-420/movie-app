@@ -31,7 +31,7 @@ export default function Header({ drawerWidth, handleDrawerToggle }: Props) {
           <IconButton
             className="drawer-toggle"
             color="inherit"
-            aria-label="open drawer"
+            aria-label="open sidebar"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
@@ -45,6 +45,7 @@ export default function Header({ drawerWidth, handleDrawerToggle }: Props) {
             color="inherit"
             aria-label={`change to ${isDark? "light-theme": "dark-theme"}`}
             onClick={toggleTheme}
+            title={`change to ${isDark? "light-theme": "dark-theme"}`}
           >
            { isDark?  <LightModeOutlinedIcon />: <DarkModeIcon/>}
           </IconButton>

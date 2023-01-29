@@ -4,9 +4,9 @@ import { Drawer, Grid } from "@mui/material";
 import MovieCard from "../components/organisms/movie-card/MovieCard";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { DetailCard } from "../components/organisms/detail-card/DetailCard";
 import { motion } from "framer-motion";
 import { SearchContext } from "../App";
+import DetailCard from "../components/organisms/detail-card/DetailCard";
 
 const GRID_CONFIG = {
   sm: 5,

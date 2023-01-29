@@ -26,7 +26,7 @@ export default function SearchBar({setSearchQuery }: any) {
       <IconButton
         className="search-bar__search-button"
         color="inherit"
-        aria-label="Open search"
+        aria-label="Open search bar"
         onClick={()=> handleSearchToggle(true)}
       >
         <SearchIcon fontSize="inherit" />
@@ -34,10 +34,12 @@ export default function SearchBar({setSearchQuery }: any) {
       {searchOpen && (
         <>
           <form onSubmit={handleSubmit}>
+            <label htmlFor="search-bar" className="sr-only">Search movies</label>
             <input
               type="text"
               className="search-bar__search-input no-outline"
               placeholder="Title, Movies, Keyword"
+              id="search-bar"
               autoFocus
               value={searchQuery}
               onChange={(e) => setQuery(e.target.value)}
@@ -48,7 +50,7 @@ export default function SearchBar({setSearchQuery }: any) {
           <IconButton
             className="search-bar__close-button"
             color="inherit"
-            aria-label="add to playlist"
+            aria-label="Close search bar"
             onClick={()=> handleSearchToggle(false)}
           >
             <CloseIcon fontSize="inherit" />
